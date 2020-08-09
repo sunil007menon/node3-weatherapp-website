@@ -10,7 +10,7 @@ const forecast = (longitude, latitude, callback) => {
             callback('Provide valid input to fetch response', undefined)
         } else {
             callback(undefined, 'It is currently ' + body.current.temperature + ' degree but it feels like ' +
-                body.current.feelslike + ' degree out')
+                body.current.feelslike + ' degree out and the humidity is ' + body.current.humidity)
         }
     })
 }
